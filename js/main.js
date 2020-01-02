@@ -124,39 +124,8 @@ jQuery(document).ready(function($) {
 
 	
 	var siteCarousel = function () {
-		if ( $('.nonloop-block-13').length > 0 ) {
-			$('.nonloop-block-13').owlCarousel({
-		    center: false,
-		    items: 1,
-		    loop: true,
-				stagePadding: 0,
-		    margin: 0,
-		    autoplay: true,
-		    nav: true,
-				navText: ['<span class="icon-arrow_back">', '<span class="icon-arrow_forward">'],
-		    responsive:{
-	        600:{
-	        	margin: 0,
-	        	nav: true,
-	          items: 2
-	        },
-	        1000:{
-	        	margin: 0,
-	        	stagePadding: 0,
-	        	nav: true,
-	          items: 3
-	        },
-	        1200:{
-	        	margin: 0,
-	        	stagePadding: 0,
-	        	nav: true,
-	          items: 4
-	        }
-		    }
-			});
-		}
 
-		$('.slide-one-item').owlCarousel({
+		$('.slide-one-item-fixedheight').owlCarousel({
 	    center: false,
 	    items: 1,
 	    loop: true,
@@ -169,6 +138,20 @@ jQuery(document).ready(function($) {
 	    nav: true,
 	    navText: ["<div class='nav-btn prev-slide'></div>","<div class='nav-btn next-slide'></div>"]
 	  });
+
+		$('.slide-one-item-autoheight').owlCarousel({
+			center: false,
+			items: 1,
+			loop: true,
+			stagePadding: 0,
+			margin: 0,
+			smartSpeed: 1000,
+			autoplay: true,
+			pauseOnHover: false,
+			autoHeight: true,
+			nav: true,
+			navText: ["<div class='nav-btn prev-slide'></div>","<div class='nav-btn next-slide'></div>"]
+		});
 
 	  
 	};

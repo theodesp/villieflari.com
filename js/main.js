@@ -159,7 +159,7 @@ jQuery(document).ready(function($) {
 		$('.slide-one-item').owlCarousel({
 	    center: false,
 	    items: 1,
-	    loop: false,
+	    loop: true,
 			stagePadding: 0,
 	    margin: 0,
 	    smartSpeed: 1000,

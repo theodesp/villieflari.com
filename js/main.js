@@ -159,15 +159,15 @@ jQuery(document).ready(function($) {
 		$('.slide-one-item').owlCarousel({
 	    center: false,
 	    items: 1,
-	    loop: true,
+	    loop: false,
 			stagePadding: 0,
 	    margin: 0,
 	    smartSpeed: 1000,
-	    autoplay: false,
+	    autoplay: true,
 	    pauseOnHover: false,
-	    autoHeight: true,
+	    autoHeight: false,
 	    nav: true,
-	    navText: ["<i class='fa fa-angle-left'></i>", "<i class='fa fa-angle-right'></i>"]
+	    navText: ["<div class='nav-btn prev-slide'></div>","<div class='nav-btn next-slide'></div>"]
 	  });
 
 	  

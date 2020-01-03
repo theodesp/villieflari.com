@@ -142,11 +142,11 @@ jQuery(document).ready(function($) {
 		$('.slide-one-item-autoheight').owlCarousel({
 			center: false,
 			items: 1,
-			loop: true,
+			loop: false,
 			stagePadding: 0,
 			margin: 0,
 			smartSpeed: 1000,
-			autoplay: true,
+			autoplay: false,
 			pauseOnHover: false,
 			autoHeight: true,
 			nav: true,
